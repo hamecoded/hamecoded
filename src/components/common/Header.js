@@ -1,11 +1,18 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
+
+
 export default class Header extends Component {
     render() {
         return (
             <Container>
-              <Logo>Oded</Logo>
+              <Link
+                style={{color: "white"}}
+                to="/"
+              ><Logo>Hamecoded</Logo></Link>
+
               {/*<Search />*/}
             </Container>
         );
@@ -29,6 +36,7 @@ const Logo = styled.div`
   color: black;
   position: relative;
   display: flex;
+  text-decoration: none;
   &:before {
     content: '';
     width: 60px;

@@ -7,7 +7,7 @@ import store from './redux/store';
 import Header from './components/common/Header';
 import Nav from './components/common/Nav';
 
-import Commands from './components/Commands';
+import Commands from './components/commands/Commands';
 
 const App = () => (
   <Provider store={store}>
@@ -16,7 +16,6 @@ const App = () => (
       <Header />
       <Main>
         <Nav />
-        <Route exact path="/" component={Commands}/>
         <Route exact path="/commands" component={Commands}/>
       </Main>
       <Footer />
