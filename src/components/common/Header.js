@@ -33,7 +33,7 @@ const Logo = styled.div`
     content: '';
     width: 60px;
     height: 60px;
-    background: url(/assets/img/oded-small.jpeg) no-repeat;
+    background: url(./assets/img/oded-small.jpeg) no-repeat;
      background-clip: content-box;
     border-radius: 50%;
     position: absolute;
