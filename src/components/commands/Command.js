@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dark } from 'react-syntax-highlighter/styles/hljs';
 
-const tags = ['JavaScript','es6'];
-
 const Code = (codeString) => {
   return <SyntaxHighlighter language='javascript' style={dark}>{codeString}</SyntaxHighlighter>;
 };
@@ -29,7 +27,6 @@ export default class Command extends React.Component {
         <Output>
           {Code(output)}
         </Output>
-
       </Container>
     );
   }
@@ -82,12 +79,10 @@ const Tag = styled.div`
 `;
 
 
-
 const Description = styled.div`
     width: 100%;
     
 `;
-
 
 const Output = styled.div`
     width: 100%;

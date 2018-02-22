@@ -8,6 +8,12 @@ import Spinner from './Spinner';
 import {fetchCommands} from "../../redux/actions/commandActions";
 
 class Commands extends React.Component {
+
+
+  componentDidMount() {
+    this.props.fetchCommands();
+  }
+
   emptyState = () => (
     <Empty>
       you don't have any items yet

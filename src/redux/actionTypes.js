@@ -1,2 +1,10 @@
-export const COMMANDS_FETCH = 'COMMANDS_FETCH';
-export const COMMANDS_FETCH_SUCCESS = 'COMMANDS_FETCH_SUCCESS';
+const asyncActionType = actionType => ({
+  PENDING: `${actionType}_PENDING`,
+  SUCCESS: `${actionType}_SUCCESS`,
+  FAILURE: `${actionType}_FAILURE`,
+  BASE: actionType
+});
+
+export const API = 'API';
+
+export const COMMAND_FETCH = asyncActionType('COMMANDS_FETCH');
