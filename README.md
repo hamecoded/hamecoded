@@ -22,6 +22,7 @@ The most recent version of `Create React App` can be found guide [here](https://
 
 To deploy the static prokject to gh-pages execute
 ```sh
+yarn predeploy
 yarn deploy
 ```
 
