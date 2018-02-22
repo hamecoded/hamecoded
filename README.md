@@ -16,3 +16,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 The most recent version of `Create React App` can be found guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
+
+## Deployment
+
+To deploy the static prokject to gh-pages execute
+```sh
+yarn deploy
+```
+
