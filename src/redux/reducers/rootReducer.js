@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux';
 
 // reducers
-// import items from './itemsReducer';
-// import user from './userReducer';
+import commands from './commandsReducer';
 
 const rootReducer = combineReducers({
-  // items,
-  // user
+  commands
 });
 
 export default rootReducer;
